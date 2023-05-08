@@ -1,0 +1,234 @@
+/*{
+    margin: 0;
+    padding: 0;
+  }*/
+
+body {
+    font-family: 'Montserrat';
+    padding-top: 0;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 2%;
+    background-color: #fafaf6;
+    color: rgb(50, 54, 2);
+}
+
+#title {
+    text-align: center;
+    margin-top: 0;
+    padding: 0;
+    height: 10%;
+    font-size: 1.5rem;
+    line-height: 1.0;
+    font-family: 'Montserrat Alternates';
+    margin-bottom: 3%;
+    background-color:  #fafaf6;
+}
+.list {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    
+}
+
+p {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+p, h2 {
+    text-align: center;
+}
+
+ul {
+    font-family: 'Montserrat Alternates';
+    list-style-type: none;
+    font-weight: 500;
+}
+
+#to-learn {
+    font-family: 'Montserrat Alternates';
+    font-weight: 700;
+    font-size: larger;
+    display: grid;
+    gap: 25px;
+    color: rgb(50, 54, 2);
+
+}
+
+.bullet {
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    height: 90px;
+    border-color: rgb(50, 54, 2);
+    border-top-width: 4px;
+
+}
+
+.arrow {
+    width: 15px;
+    height: 15px;
+    align-items: center;
+}
+.intro, h3 {
+text-indent: 50px;
+letter-spacing: 0.025em;
+}
+
+/* i {
+    margin-right: 5px;
+} */
+
+.split {
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    
+}
+
+.tutor {
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin-right: 10px;
+    margin-left: 0;
+    padding-right: 20px;
+    /*object-fit: cover;
+    object-position: center;*/
+}
+
+.image-grid {
+    --gap: 16px;
+    /* --num-cols: 4; */
+    --row-height: 300px;
+
+    overflow-x: auto;
+
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: flex;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+.image-grid>img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+.image-grid::-webkit-scrollbar { 
+    width: 0em; 
+    background-color: hwb(0 99% 1% / 0); 
+  } 
+    
+  .image-grid::-webkit-scrollbar-thumb { 
+    background-color: hwb(0 99% 1% / 0); 
+  } 
+    
+  .image-grid::-webkit-scrollbar-thumb:hover { 
+    background-color: hwb(0 99% 1% / 0); 
+  }
+
+
+/*.image-grid-col-2 {
+    grid-column: 2;
+}
+
+.image-grid-row-2 {
+    grid-row: 2;
+}*/
+
+@media screen and (max-width: 480px) {
+    body {
+        background-color: #ffffffee;
+        font-family: 'Montserrat';
+        padding-top: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 2%;
+        background-color: #fafaf6;
+    }
+    .split {
+        min-height: 100vh;
+        width: 90%;
+        padding: 5px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    }
+    .tutor {
+        width: 250px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        margin-right: 0px;
+        margin-left: 0;
+        /*object-fit: cover;
+        object-position: center;*/
+        }
+        i {
+            margin-right: 5px;
+
+        }
+
+        
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: #ffffffee;
+        font-family: 'Montserrat';
+        padding-top: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 2%;
+        background-color: #fafaf6;
+    }
+    .split {
+        min-height: 100vh;
+        width: 90%;
+        padding: 5px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    }
+    .tutor {
+        width: 250px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        margin-right: 0px;
+        margin-left: 0;
+        /*object-fit: cover;
+        object-position: center;*/
+        }
+        i {
+            margin-right: 5px;
+        }
+        
+}
+
+/* screen size for diff devices
+ 320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets.
+769px — 1024px: Small screens, laptops.
+1025px — 1200px: Desktops, large screens.
+1201px and more — Extra large screens, TV.
+@media screen and (min-width: 480px) {
+    div {
+        float: left;
+        background: red;
+    }
+    .......
+}
