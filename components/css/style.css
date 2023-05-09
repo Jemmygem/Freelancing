@@ -1,11 +1,6 @@
-/*{
-    margin: 0;
-    padding: 0;
-  }*/
-
 body {
     font-family: 'Montserrat';
-    padding-top: 0;
+    padding-top: 30px;
     padding-left: 150px;
     padding-right: 150px;
     padding-bottom: 2%;
@@ -56,7 +51,7 @@ ul {
 }
 
 .bullet {
-    width: 90%;
+    width: 100%;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -74,16 +69,15 @@ ul {
     align-items: center;
 }
 .intro, h3 {
-text-indent: 50px;
-letter-spacing: 0.025em;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 35px;
+    /* text-indent: 50px; */
+    letter-spacing: 0.025em;
 }
 
-/* i {
-    margin-right: 5px;
-} */
-
 .split {
-    width: 90%;
+    width: 100%;
     padding: 20px;
     display: flex;
     align-items: center;
@@ -99,8 +93,8 @@ letter-spacing: 0.025em;
     margin-right: 10px;
     margin-left: 0;
     padding-right: 20px;
-    /*object-fit: cover;
-    object-position: center;*/
+    object-fit: cover;
+    object-position: center;
 }
 
 .image-grid {
@@ -109,7 +103,6 @@ letter-spacing: 0.025em;
     --row-height: 300px;
 
     overflow-x: auto;
-
 
     box-sizing: border-box;
     padding: var(--gap);
@@ -128,15 +121,15 @@ letter-spacing: 0.025em;
 .image-grid::-webkit-scrollbar { 
     width: 0em; 
     background-color: hwb(0 99% 1% / 0); 
-  } 
-    
-  .image-grid::-webkit-scrollbar-thumb { 
-    background-color: hwb(0 99% 1% / 0); 
-  } 
-    
-  .image-grid::-webkit-scrollbar-thumb:hover { 
-    background-color: hwb(0 99% 1% / 0); 
-  }
+} 
+
+.image-grid::-webkit-scrollbar-thumb { 
+background-color: hwb(0 99% 1% / 0); 
+} 
+
+.image-grid::-webkit-scrollbar-thumb:hover { 
+background-color: hwb(0 99% 1% / 0); 
+}
 
 
 /*.image-grid-col-2 {
@@ -149,73 +142,50 @@ letter-spacing: 0.025em;
 
 @media screen and (max-width: 480px) {
     body {
-        background-color: #ffffffee;
-        font-family: 'Montserrat';
-        padding-top: 0;
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-bottom: 2%;
-        background-color: #fafaf6;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .split {
-        min-height: 100vh;
-        width: 90%;
-        padding: 5px;
+        min-height: 100%;
+        width: 100%;
+        padding: 15px;
         display: grid;
-        align-items: center;
-        justify-content: center;
         box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
     }
     .tutor {
-        width: 250px;
-        height: 250px;
+        width: 100%;
+        height: 300px;
         display: flex;
         justify-content: center;
-        margin-right: 0px;
-        margin-left: 0;
-        /*object-fit: cover;
-        object-position: center;*/
-        }
-        i {
-            margin-right: 5px;
-
-        }
+    }
+    i {
+        margin-right: 5px;
+    }
 
         
 }
 
 @media screen and (max-width: 768px) {
     body {
-        background-color: #ffffffee;
-        font-family: 'Montserrat';
-        padding-top: 0;
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-bottom: 2%;
-        background-color: #fafaf6;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .split {
-        min-height: 100vh;
-        width: 90%;
-        padding: 5px;
+        min-height: 100%;
+        width: 100%;
+        padding: 15px;
         display: grid;
-        align-items: center;
-        justify-content: center;
         box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
     }
     .tutor {
-        width: 250px;
-        height: 250px;
+        width: 100%;
+        height: 300px;
         display: flex;
         justify-content: center;
-        margin-right: 0px;
-        margin-left: 0;
-        /*object-fit: cover;
-        object-position: center;*/
-        }
-        i {
-            margin-right: 5px;
-        }
+    }
+    i {
+        margin-right: 5px;
+    }
         
 }
 
