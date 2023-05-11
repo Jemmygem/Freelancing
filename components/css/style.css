@@ -22,7 +22,6 @@ body {
 .list {
     display: grid;
     gap: 20px;
-    justify-content: center;
     
 }
 
