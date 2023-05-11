@@ -87,12 +87,13 @@ ul {
 
 .tutor {
     width: 250px;
-    height: 250px;
+    height: 100%;
     display: block;
     margin-right: 10px;
     margin-left: 0;
     padding-right: 20px;
-    object-fit: cover;
+    /* object-fit: cover; */
+    justify-content: center;
     object-position: center;
 }
 
@@ -149,6 +150,7 @@ background-color: hwb(0 99% 1% / 0);
         width: 100%;
         padding: 15px;
         display: grid;
+        justify-content: center;
         box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
     }
     .tutor {
@@ -174,6 +176,7 @@ background-color: hwb(0 99% 1% / 0);
         width: 100%;
         padding: 15px;
         display: grid;
+        justify-content: center;
         box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
     }
     .tutor {
